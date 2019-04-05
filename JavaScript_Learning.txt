@@ -1,0 +1,217 @@
+Introduction to Javascript
+==========================
+	- What is Javascript - ES7 and where we can use it?
+	---------------------------------------------------
+		- Its a client side lanuguar. But is it?
+		- Its lot more then what it used to be. Javascript was designed to run on browsers but its doing lot more.
+		- In past to intract with server we used to write php, python where sql queries are executed and data is returned which is presented on browser.
+		- We co do it now using javascript too i.e using (NodeJS). Its completly our choose wheather to show user or not.
+		- NodeJS is a package which can dealy everything on the server side like writting queries, 
+		- ReactJS library for building user interface, which can run on Andriod, IOS etc, 
+		- Angular JS one framework for mobile and desktop 
+		- Electron : build cross platform desktop apps with Javascript, HTML and CSS
+		- Vue JS : Library for designing annimations for web
+		- React VR :
+		- TensorFlow.js : for training and deploying Machine Learning models.
+		
+		Java Vs Javascript
+		==================
+		- Probably the worst decission, ever 
+		- What are the similarites between a CAR and a CARpet
+		
+		ES6/ ES7
+		========
+		- ECMAScript - European Computer Manufactures Association Script
+		- 1995 - Creation - Netscape
+		- 1997 - ES1
+		- 2009 - 10 - ES5 --> MAP, ForEach 
+		- 2015 - ES6
+		- 2017 - ES7
+		
+		https://kangax.github.io/compat-table/es6/
+		
+		
+	- Getting all tools for Javascript
+	----------------------------------
+		- NodeJS - LTS Version (Long Term Support)
+		- Code Editor - Sublime, Atom, VS Code
+		- Browser - Chrome
+		- JSBin - Optional - https://jsbin.com/?js,console
+				
+		
+	- Setting up VSCode and Hello world in Javascript
+	-------------------------------------------------
+		console.log('Hello World!');
+		
+		C:\VJ-Data\Learning\JavaScript\JS_ExerciseFiles\01_Basics>node HelloWorld.js
+		Hello World!
+	  
+Basic of programming with Javascript
+====================================
+	- Basic of variable and constant in javascript
+	----------------------------------------------
+		- varailbe will change where else contant will not
+		- varialbs start with 'let' , constant start with 'const'
+		
+		e.g let 
+		
+		- reserver a space in memory where I am gone put some value
+		- we dont have to specifiy the type to any variable decleration javascript will know based on the value assigned
+		- if we provide value in single quote or double quote its treated as string
+		- to declare number dont user single or double quote
+			e.g let score = 123
+		- semi-clone is not mandatory in Javascript
+		- dont ever redeclare same varailbe, it will throw error
+	
+	- Numbers in javascript
+	------------------------
+		- var score = 100
+		  score = 130
+		  const bonus = 50
+		  var finalScore = (score + bonus) * 1.8
+		  console.log(finalScore)
+		  var complex = ((4 + 4) * 5) / 2
+		  console.log(complex)
+		  
+		  // temprature conversion 
+		  let tempInFaherhite = 33
+		  let celsius  = ((tempInFaherhite - 32) * 5 / 9)
+		  console.log(celsius)
+		  
+	- Undefined and Boolean values in Javascript
+	--------------------------------------------
+		- null, 0 and undefined are all different concepts
+		- Boolean - true / false
+		
+Conditional Programming with javascript
+=======================================
+	- If and Else in javascript
+		if(false){
+			console.log('I am inside if block')
+			console.log('I am still inside if block')	
+		}else if(true){
+			console.log('I am inside second if block')
+		}
+		else {
+			console.log('I am inside else block')
+		}
+		
+	- Logical operations in Javascript
+	  && - AND operator
+	  || - OR operator
+	  ! - NOT Operator
+	  
+	- Var and let keyword - scope in javascript
+		- var used for declaring variable 
+		- difference between let and var and difference between local and global scope
+		- if we declar local variable within a block using var it will be accessable outside the block too
+		- dont use var in hihger version, use only if you want to declar as global
+		
+	- Kings territory probelm in Javascript
+		- if we have not decalred a variabel in the global but assign value to variable in local
+		- if we try to access the variable in local and outside block in another block we will be able to do that 
+		- which is tha major issue it will consider as global, to make it local we need to declar using let inside the block
+		
+	- Arrays and template literals in Javascript
+		- ` is used for templating
+		- const superHeroes = ['Iron Man','Spiderman','Captian America','Thor']
+
+			console.log(superHeroes)
+			console.log(superHeroes[0])
+			console.log(superHeroes.length)
+			
+			console.log(`we have ${superHeroes.length} superHeroes`)
+	
+	- 3 must known methods for Arrays in Javascript
+		- const numbers = ['one','two','three','four','five']
+		
+		- numbers[1] = 'SOMETHING' --> ['one','SOMETHING','three','four','five']
+	
+		- number.shift() 
+		  - This will return the first element of the array (one in this case). The array's first number will be deleted
+		  
+		- number.unshift('SOMETHING') 
+		  - This will add the element to first index i.e at index 0
+		  
+		- numbers.pop()
+			- Removes last element from the array and return it element value that is poped
+		
+		- numbers.push('SOMETHING')
+			- This will add the element at the end of the array
+			
+		- numbers.splice(2, 1, 'SOMETHING')
+			- Start with index 2 delete one element and add 'SOMETHING' to the array
+			- (2, 2, 'SOMETHING') will delete 2 elements starting with index 2 and add only 'SOMETHING' to array
+	
+
+Loops and Function in  javascript
+=================================
+	- Introduction to functions in Javascript
+	-----------------------------------------
+		- let sayHello = function(){
+				console.log('Welcome to my function')
+			}
+
+		  sayHello()
+		  
+		- let sayHello = function(name){
+				console.log(`Welcome to my function ${name}`)
+			}
+
+		  sayHello('John') 
+		  
+		- let myAddress = function(num1, num2){
+				let added = num1 + num2
+				return added
+			}
+
+			console.log(myAddress(3,5))
+			let result = myAddress(3,9)
+			console.log(result)
+			
+	- Default parameters in Javascript
+	----------------------------------
+		- let guestUser = function(name ='unName', courseCount=0){
+				retunr 'Hello' + name + ' and your course count is : ' + courseCount
+		}
+		
+		console.log(guestUser())
+		
+	- ForEach loop in Javascript
+	----------------------------
+		- const days = ['Mon','Tue','Wed','Thru','Fri','Sat']
+
+			days.forEach(function(day, index){
+				console.log(`Starts with ${index+1} -- ${day}`)
+			})
+		- first parameter of callback function is the array element and second one is the index
+		- function without any name is accepted as parmeter of the forEach
+		
+		
+	- For Loop in Javascript
+	------------------------
+		- for(let i = 0; i < days.length; i++){
+			const element = days[i]
+			console.log(element)
+		}
+	
+	
+Objects and Arrays in Javascript
+================================
+	- 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
