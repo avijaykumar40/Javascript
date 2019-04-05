@@ -198,7 +198,75 @@ Loops and Function in  javascript
 	
 Objects and Arrays in Javascript
 ================================
-	- 
+	- == only check if the value is equal 
+	- === identity. check the equality of object
+	
+	let myVar = {}
+	let MyVar2 = {}
+	
+	console.log(myVar === myVar2) - this will return false as both are refering to different instances.
+	
+	Objects in Javascript
+	=====================
+		- Objects are THE most important
+		
+		let myYoutubeVideo = {
+				title : 'Loops in JavaScript',
+				videoLenght : 15,
+				videoCreator: 'Vijay',
+				videoDecription : 'This is video description and a long one'
+		}
+
+		console.log(myYoutubeVideo)
+
+		console.log(`Hey new video on ${myYoutubeVideo.title} by ${myYoutubeVideo.videoCreator}`)	
+		
+	Function that takes objects and gives object
+	============================================
+		- Refer myObjects.js under JS_ExerciseFiles\02_Intermediate
+		
+	Trello V2 in JavaScript
+	=======================
+		- refer JS_ExerciseFiles\02_Intermediate\trelloV2.js
+		
+	Methods and this keyword in JavaScript
+	======================================
+		- Function within object is called method no more difference
+			let myTodos = {
+						day : 'Monday',
+						mettings : 0,
+						meetDone : 0,
+						addMetting: function(num){
+							this.mettings = this.mettings + num
+						},	
+						summary : function(){
+							return `You have ${this.mettings} mettings today`
+						}
+					}
+
+			myTodos.addMetting(4)
+			console.log(myTodos.summary())
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	
 	
 	
