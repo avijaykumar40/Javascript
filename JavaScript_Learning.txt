@@ -423,6 +423,23 @@ Taking Skills to WEB
 	Advance Form Validation
 	=======================
 	
+TODO Application
+================
+	- JS_ExerciseFiles\01_Project
+
+	While loop and create text node
+	===============================
+	var h = document.createElement('h1')
+	var myValue = document.createTextNode('My H1 content')
+	h.appendChild(myValue)
+	
+	document.querySelector('h1').appendChild(h)
+	
+	
+	
+
+
+	
 	
 	
 	
