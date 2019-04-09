@@ -435,6 +435,53 @@ TODO Application
 	
 	document.querySelector('h1').appendChild(h)
 	
+	while(condition){
+		
+		
+	}
+	
+Classes and Objects in JavaScript
+=================================
+	
+	CRUD in Localstorage in JavaScript
+	==================================
+		- localStorage.setItem('hero','Thor')
+		  localStorage.setItem('todo','Go to Gym')
+		  
+		  console.log(localStorage.getItem('hero'))
+		  
+		  console.log(localStorage.getItem('todo'))
+		  
+		  localStorage.setItem('todo','Buy Bread')
+		  
+		  console.log(localStorage.getItem('todo'))
+		  
+		  localStorage.removeItem('hero')
+		  console.log(localStorage.getItem('hero'))
+		  
+		  localStorage.clear()
+		  
+		- we cannot store object into local storage directly we need to manipulte it to achive
+		
+	Parsing JSON as STRINGFY
+	========================
+		- https://randomuser.me/
+		- https://jsoneditoronline.org/
+		- JSON Generally comes as String we need to convert accordingly
+		
+	Classes and Objects Basics
+	==========================
+		- First name of class name is Caps
+		- When you create a object for the first time using the class a method is called by default which is called as constructor
+		- we can override it by defining in the class or it will create internally with emtpy 
+		- 
+		
+	Inheritance and method overriding
+	=================================
+		- Class Teacher extends User
+		- first important point is constructor
+		- Refer JS_ExerciseFiles\02_Advance
+	
 	
 	
 
